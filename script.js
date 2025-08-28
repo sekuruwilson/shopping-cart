@@ -1,9 +1,9 @@
 // Sample products
 const products = [
-    { id: 1, name: "Apple", price: 1.5 },
-    { id: 2, name: "Banana", price: 0.8 },
-    { id: 3, name: "Orange", price: 1.2 },
-    { id: 4, name: "Mango", price: 2.0 }
+    { id: 1, name: "Apple", price: 1000 },
+    { id: 2, name: "Banana", price: 800 },
+    { id: 3, name: "Orange", price: 1200 },
+    { id: 4, name: "Mango", price: 500
 ];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -76,3 +76,4 @@ function updateQuantity(id, quantity) {
 // Initial render
 renderProducts();
 renderCart();
+
